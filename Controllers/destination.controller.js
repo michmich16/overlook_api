@@ -297,7 +297,7 @@ export default class DestinationController {
                     ],
                     include: [
                       {
-                        model: RoomFacility,
+                        model: Image,
                         attributes: ["filename","title"],
                       },
                       {
