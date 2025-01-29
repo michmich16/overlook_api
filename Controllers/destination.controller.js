@@ -223,6 +223,12 @@ export default class DestinationController {
                       "day_price_normal",
                       "day_price_flex",
                     ],
+                    include: [
+                      {
+                        model: Image,
+                        attributes: ["filename", "title"]
+                      }
+                    ]
                   },
                 ],
                 where: { slug: hotel },
